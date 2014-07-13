@@ -14,7 +14,7 @@ public class Cook {
 			this.pb.buildFilling();
 			constructed = true;
 		} else {
-			BuilderClient.addOutput("Data: error - no pie builder found!");
+			BuilderClient.addOutput("error - no pie builder found!");
 		}
 	}
 	
@@ -22,7 +22,7 @@ public class Cook {
 		if (constructed) {
 			pb.bake();
 		} else {
-			BuilderClient.addOutput("Data: error - your pie is not constructed yet!"); 
+			BuilderClient.addOutput("error - your pie is not constructed yet!"); 
 		}
 	}
 	
@@ -30,7 +30,7 @@ public class Cook {
 		if (pb.isBaked()) {
 			return pb.getPie();
 		} else {
-			BuilderClient.addOutput("Data: error - your pie is not ready yet");
+			BuilderClient.addOutput("error - your pie is not ready yet");
 			return null;
 		}
 	}

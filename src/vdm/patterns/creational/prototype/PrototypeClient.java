@@ -4,6 +4,8 @@ import vdm.patterns.helpers.Client;
 
 public class PrototypeClient extends Client {
 	public void main() {
+		output = "";
+		
 		ConcretePrototype cp1 = new ConcretePrototype();
 	    cp1.setA(5);
 	    cp1.setB(-1);
@@ -16,11 +18,9 @@ public class PrototypeClient extends Client {
 	    
 	    ConcretePrototype cp3 = (ConcretePrototype) cp2.clone();
 	    
-	    String output = "";
+	    output += cp1.getA() + ", " + cp1.getB();
+	    output += cp3.getA() + ", " + cp3.getB();
 	    
-	    output += "\nData: " + cp1.getA() + ", " + cp1.getB();
-	    output += "\nData: " + cp3.getA() + ", " + cp3.getB();
-	    
-	    super.main(output, "Prototype");
+	    super.main("Prototype");
 	}
 }

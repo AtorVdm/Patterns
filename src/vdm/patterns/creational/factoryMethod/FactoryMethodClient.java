@@ -4,14 +4,15 @@ import vdm.patterns.helpers.Client;
 
 public class FactoryMethodClient extends Client {
 	public void main() {
+		output = "";
+		
 		Creator[] creators = {new ConcreteCreatorA(), new ConcreteCreatorB()};
 
-		String output = "";
 		for (Creator creator : creators) {
 	    	Product product = creator.factoryMethod();
-	    	output += "\nData: " + product.getClass().getSimpleName();
+	    	output += product.getClass().getSimpleName();
 	    }
 		
-		super.main(output, "Factory Method");
+		super.main("Factory Method");
 	}
 }

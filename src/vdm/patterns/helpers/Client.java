@@ -1,15 +1,13 @@
 package vdm.patterns.helpers;
 
 public class Client {
-	public void main(String output, Pattern object) {
-		printAll(output, object.getClass().getSimpleName());
+	protected static String output = "";
+
+	public void main(String object) {
+		printAll(object);
 	}
 	
-	public void main(String output, String object) {
-		printAll(output, object);
-	}
-	
-	private void printAll(String output, String className) {
+	private void printAll(String className) {
 		System.out.print("Testing pattern: " + className + ":");
 		
 		System.out.print(output);
@@ -19,5 +17,9 @@ public class Client {
 
 	private void printSplitter() {
 	    System.out.print("\n----------------------------------------\n");
+	}
+	
+	public static void addOutput(String out) {
+		output += "\nData: " + out;
 	}
 }

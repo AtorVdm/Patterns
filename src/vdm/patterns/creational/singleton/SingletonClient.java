@@ -2,20 +2,20 @@ package vdm.patterns.creational.singleton;
 
 public class SingletonClient extends vdm.patterns.helpers.Client {
 	public void main() {
+		output = "";
+		
 		Singleton sin = Singleton.getInstance();
-	    
-		String output = "";
 		
 	    sin.setData("1");
-	    output += ("\nData: " + sin.getData());
+	    output += sin.getData();
 	    
 	    dataChanger1();
-	    output += ("\nData: " + sin.getData());
+	    output += sin.getData();
 	    
 	    dataChanger2();
-	    output += ("\nData: " + sin.getData());
+	    output += sin.getData();
 	    
-	    super.main(output, sin);
+	    super.main("Singleton");
 	}
 
 	private void dataChanger1() {

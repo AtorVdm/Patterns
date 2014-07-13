@@ -16,15 +16,15 @@ public abstract class PieBuilder {
 	
 	public void bake() {
 		if(pie.getDough().isEmpty()) {
-			// no dough!
+			BuilderClient.addOutput("error - no dough found!");
 			return;
 		}
 		if (pie.getFilling().isEmpty()) {
-			// no filling!
+			BuilderClient.addOutput("error - no filling found!");
 			return;
 		}
 		baked = true;
-		// out: baked
+		BuilderClient.addOutput("*oven sound*");
 	}
 
 	public Pie getPie() {

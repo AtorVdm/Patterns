@@ -2,16 +2,16 @@ package vdm.patterns.creational.abstractFactory;
 
 public class ProductA2 extends AbstractProductA {
 	public ProductA2(String arg) {
-		AbstractFactoryClient.addOutput("\nData: initialized ProductA2 with arg:" + arg);
+		AbstractFactoryClient.addOutput("initialized ProductA2 with arg:" + arg);
 	}
 
 	@Override
 	public void operationA1() {
-		AbstractFactoryClient.addOutput("\nData: called operationA1 from ProductA2");
+		AbstractFactoryClient.addOutput("called operationA1 from ProductA2");
 	}
 
 	@Override
 	public void operationA2() {
-		AbstractFactoryClient.addOutput("\nData: called operationA2 from ProductA2");
+		AbstractFactoryClient.addOutput("called operationA2 from ProductA2");
 	}
 }
