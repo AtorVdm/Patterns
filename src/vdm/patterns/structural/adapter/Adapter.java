@@ -1,6 +1,8 @@
 package vdm.patterns.structural.adapter;
 
-public class Adapter extends FridgeMicrowave implements OldMachine {
+import vdm.patterns.helpers.Pattern;
+
+public class Adapter extends FridgeMicrowave implements OldMachine, Pattern {
 	@Override
 	public void launch() {
 		startWarmingCell1();

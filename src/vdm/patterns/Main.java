@@ -6,6 +6,9 @@ import vdm.patterns.creational.factoryMethod.FactoryMethodClient;
 import vdm.patterns.creational.prototype.PrototypeClient;
 import vdm.patterns.creational.singleton.SingletonClient;
 import vdm.patterns.structural.adapter.AdapterClient;
+import vdm.patterns.structural.composite.CompositeClient;
+import vdm.patterns.structural.decorator.DecoratorClient;
+import vdm.patterns.structural.facade.FacadeClient;
 
 public class Main {
 	public static void main(String[] args) {
@@ -17,6 +20,9 @@ public class Main {
 		(new BuilderClient()).main();
 		testingOutput("STRUCTURAL");
 		(new AdapterClient()).main();
+		(new CompositeClient()).main();
+		(new DecoratorClient()).main();
+		(new FacadeClient()).main();
 	}
 	
 	public static void testingOutput(String testingCase) {
