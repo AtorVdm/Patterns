@@ -18,8 +18,8 @@ public class PrototypeClient extends Client {
 	    
 	    ConcretePrototype cp3 = (ConcretePrototype) cp2.clone();
 	    
-	    output += cp1.getA() + ", " + cp1.getB();
-	    output += cp3.getA() + ", " + cp3.getB();
+	    addOutput(cp1.getA() + ", " + cp1.getB());
+	    addOutput(cp3.getA() + ", " + cp3.getB());
 	    
 	    super.main("Prototype");
 	}

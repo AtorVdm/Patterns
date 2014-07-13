@@ -7,13 +7,13 @@ public class SingletonClient extends vdm.patterns.helpers.Client {
 		Singleton sin = Singleton.getInstance();
 		
 	    sin.setData("1");
-	    output += sin.getData();
+	    addOutput(sin.getData());
 	    
 	    dataChanger1();
-	    output += sin.getData();
+	    addOutput(sin.getData());
 	    
 	    dataChanger2();
-	    output += sin.getData();
+	    addOutput(sin.getData());
 	    
 	    super.main("Singleton");
 	}

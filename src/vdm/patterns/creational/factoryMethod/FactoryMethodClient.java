@@ -10,7 +10,7 @@ public class FactoryMethodClient extends Client {
 
 		for (Creator creator : creators) {
 	    	Product product = creator.factoryMethod();
-	    	output += product.getClass().getSimpleName();
+	    	addOutput(product.getClass().getSimpleName());
 	    }
 		
 		super.main("Factory Method");

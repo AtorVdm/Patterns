@@ -8,7 +8,7 @@ public class Client {
 	}
 	
 	private void printAll(String className) {
-		System.out.print("Testing pattern: " + className + ":");
+		System.out.print("Testing pattern: " + className);
 		
 		System.out.print(output);
 		

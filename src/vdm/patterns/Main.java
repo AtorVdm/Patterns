@@ -21,7 +21,7 @@ public class Main {
 	
 	public static void testingOutput(String testingCase) {
 		System.out.println("/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\");
-		System.out.println(testingCase);
+		System.out.println("     " + testingCase);
 		System.out.println("\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/");
 	}
 }
