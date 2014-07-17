@@ -1,5 +1,6 @@
 package vdm.patterns;
 
+import vdm.patterns.behavioral.chainOfResponsibility.ChainOfResponsibilityClient;
 import vdm.patterns.creational.abstractFactory.AbstractFactoryClient;
 import vdm.patterns.creational.builder.BuilderClient;
 import vdm.patterns.creational.factoryMethod.FactoryMethodClient;
@@ -30,6 +31,7 @@ public class Main {
 		(new FlyweightClient()).main();
 		(new ProxyClient()).main();
 		testingOutput("BEHAVIORAL");
+		(new ChainOfResponsibilityClient()).main();
 	}
 	
 	public static void testingOutput(String testingCase) {
