@@ -4,7 +4,7 @@ import patterns.gof.helpers.Client;
 
 public class AbstractFactoryClient extends Client {
 	public void main() {
-		output = "";
+		cleanOutput();
 		
 		AbstractFactory af = FactoryMaker.getFactory(1);
 		AbstractProductA product = af.createProductA();

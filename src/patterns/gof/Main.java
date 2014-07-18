@@ -2,6 +2,7 @@ package patterns.gof;
 
 import patterns.gof.behavioral.chainOfResponsibility.ChainOfResponsibilityClient;
 import patterns.gof.behavioral.command.CommandClient;
+import patterns.gof.behavioral.interpreter.InterpreterClient;
 import patterns.gof.creational.abstractFactory.AbstractFactoryClient;
 import patterns.gof.creational.builder.BuilderClient;
 import patterns.gof.creational.factoryMethod.FactoryMethodClient;
@@ -34,6 +35,7 @@ public class Main {
 		testingOutput("BEHAVIORAL");
 		(new ChainOfResponsibilityClient()).main();
 		(new CommandClient()).main();
+		(new InterpreterClient()).main();
 	}
 	
 	public static void testingOutput(String testingCase) {

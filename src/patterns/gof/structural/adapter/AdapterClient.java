@@ -7,7 +7,7 @@ import patterns.gof.helpers.Client;
 
 public class AdapterClient extends Client {
 	public void main() {
-		output = "";
+		cleanOutput();
 		
 		List<OldMachine> machines = new ArrayList<OldMachine>();
 		machines.add(new CoffeeMachine());

@@ -4,7 +4,7 @@ import patterns.gof.helpers.Client;
 
 public class PrototypeClient extends Client {
 	public void main() {
-		output = "";
+		cleanOutput();
 		
 		ConcretePrototype cp1 = new ConcretePrototype();
 	    cp1.setA(5);

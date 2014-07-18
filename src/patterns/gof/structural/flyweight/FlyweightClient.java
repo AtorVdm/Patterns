@@ -4,7 +4,7 @@ import patterns.gof.helpers.Client;
 
 public class FlyweightClient extends Client {
 	public void main() {
-		output = "";
+		cleanOutput();
 		FlyweightFactory factory = new FlyweightFactory();
 		 
 		int [] characterCodes = {1,2,3};

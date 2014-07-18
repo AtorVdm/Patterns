@@ -1,8 +1,8 @@
 package patterns.gof.helpers;
 
 public class Client {
-	protected static String output = "";
-
+	protected static String output;
+	
 	public void main(String object) {
 		printAll(object);
 	}
@@ -21,5 +21,9 @@ public class Client {
 	
 	public static void addOutput(String out) {
 		output += "\nData: " + out;
+	}
+	
+	public static void cleanOutput() {
+		output = "";
 	}
 }

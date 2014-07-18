@@ -4,7 +4,7 @@ import patterns.gof.helpers.Client;
 
 public class FacadeClient extends Client {
 	public void main() {
-		output = "";
+		cleanOutput();
 		(new Facade()).startComputer();
 		super.main("Facade");
 	}

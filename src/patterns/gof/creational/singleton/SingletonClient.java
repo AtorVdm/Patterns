@@ -2,7 +2,7 @@ package patterns.gof.creational.singleton;
 
 public class SingletonClient extends patterns.gof.helpers.Client {
 	public void main() {
-		output = "";
+		cleanOutput();
 		
 		Singleton sin = Singleton.getInstance();
 		

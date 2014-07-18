@@ -4,7 +4,7 @@ import patterns.gof.helpers.Client;
 
 public class BuilderClient extends Client {
 	public void main() {
-		output = "";
+		cleanOutput();
 		
 		try {
 			Cook cookJohn = new Cook();

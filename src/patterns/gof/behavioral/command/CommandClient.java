@@ -9,7 +9,7 @@ import patterns.gof.helpers.Client;
 
 public class CommandClient extends Client {
 	public void main() {
-		output = "";
+		cleanOutput();
 		
 		Turtle turtle = new Turtle();
 		

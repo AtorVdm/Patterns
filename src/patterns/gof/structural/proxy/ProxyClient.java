@@ -4,7 +4,7 @@ import patterns.gof.helpers.Client;
 
 public class ProxyClient extends Client {
 	public void main() {
-		output = "";
+		cleanOutput();
 		
 		MathProxy p = new MathProxy();
 

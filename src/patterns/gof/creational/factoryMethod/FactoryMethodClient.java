@@ -4,7 +4,7 @@ import patterns.gof.helpers.Client;
 
 public class FactoryMethodClient extends Client {
 	public void main() {
-		output = "";
+		cleanOutput();
 		
 		Creator[] creators = {new ConcreteCreatorA(), new ConcreteCreatorB()};
 

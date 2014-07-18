@@ -4,7 +4,7 @@ import patterns.gof.helpers.Client;
 
 public class ChainOfResponsibilityClient extends Client {
 	public void main() {
-		output = "";
+		cleanOutput();
 		
 		Logger logger, logger1, logger2;
 		logger = new ConsoleLogger(LoggingLevel.All.getCode());
