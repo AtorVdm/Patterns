@@ -1,7 +1,9 @@
 package patterns.gof.helpers;
 
-public class Client {
+public abstract class Client {
 	protected static String output;
+	
+	public abstract void main();
 	
 	public void main(String object) {
 		printAll(object);

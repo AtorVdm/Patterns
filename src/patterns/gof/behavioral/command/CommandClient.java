@@ -28,11 +28,11 @@ public class CommandClient extends Client {
 			center.executeAndSave(commands.get(direction));
 		}
 		
-		addOutput("coordinates: " + turtle.getPosition());
+		addOutput("coordinates: [" + turtle.getPosition().x + ", " + turtle.getPosition().y + "]");
 		
 		center.resetLastExecutes(3);
 		
-		addOutput("coordinates: " + turtle.getPosition());
+		addOutput("coordinates: [" + turtle.getPosition().x + ", " + turtle.getPosition().y + "]");
 		
 		super.main("Command");
 	}
