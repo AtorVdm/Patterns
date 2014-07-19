@@ -3,6 +3,7 @@ package patterns.gof.structural.bridge;
 import patterns.gof.helpers.Client;
 
 public class BridgeClient extends Client {
+	@Override
 	public void main() {
 		cleanOutput();
 		

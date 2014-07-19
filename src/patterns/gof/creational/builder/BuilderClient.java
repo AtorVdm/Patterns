@@ -3,6 +3,7 @@ package patterns.gof.creational.builder;
 import patterns.gof.helpers.Client;
 
 public class BuilderClient extends Client {
+	@Override
 	public void main() {
 		cleanOutput();
 		
@@ -30,7 +31,7 @@ public class BuilderClient extends Client {
 			addOutput("pie filling: " + applePie.getFilling());
 			
 			addOutput("cook John is tired. Cook John is going home");
-		} catch(Exception ex) {
+		} catch (Exception ex) {
 			addOutput("undefined error: " + ex.getMessage());
 		}
 		

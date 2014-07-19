@@ -3,6 +3,7 @@ package patterns.gof.creational.factoryMethod;
 import patterns.gof.helpers.Client;
 
 public class FactoryMethodClient extends Client {
+	@Override
 	public void main() {
 		cleanOutput();
 		

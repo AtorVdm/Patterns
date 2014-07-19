@@ -3,6 +3,7 @@ package patterns.gof.creational.prototype;
 import patterns.gof.helpers.Client;
 
 public class PrototypeClient extends Client {
+	@Override
 	public void main() {
 		cleanOutput();
 		

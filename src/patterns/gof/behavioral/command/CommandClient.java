@@ -8,6 +8,7 @@ import java.util.Map;
 import patterns.gof.helpers.Client;
 
 public class CommandClient extends Client {
+	@Override
 	public void main() {
 		cleanOutput();
 		

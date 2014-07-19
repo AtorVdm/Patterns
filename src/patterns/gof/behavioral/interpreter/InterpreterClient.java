@@ -6,6 +6,7 @@ import java.util.List;
 import patterns.gof.helpers.Client;
 
 public class InterpreterClient extends Client {
+	@Override
 	public void main() {
 		cleanOutput();
 		

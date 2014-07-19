@@ -3,6 +3,7 @@ package patterns.gof.behavioral.mediator;
 import patterns.gof.helpers.Client;
 
 public class MediatorClient extends Client {
+	@Override
 	public void main() {
 		cleanOutput();
 		

@@ -3,6 +3,7 @@ package patterns.gof.behavioral.memento;
 import patterns.gof.helpers.Client;
 
 public class MementoClient extends Client {
+	@Override
 	public void main() {
 		cleanOutput();
 		

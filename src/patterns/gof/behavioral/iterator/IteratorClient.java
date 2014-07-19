@@ -7,6 +7,7 @@ import java.util.List;
 import patterns.gof.helpers.Client;
 
 public class IteratorClient extends Client {
+	@Override
 	public void main() {
 		cleanOutput();
 		

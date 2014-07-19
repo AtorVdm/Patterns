@@ -1,6 +1,7 @@
 package patterns.gof.creational.singleton;
 
 public class SingletonClient extends patterns.gof.helpers.Client {
+	@Override
 	public void main() {
 		cleanOutput();
 		

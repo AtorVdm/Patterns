@@ -9,6 +9,7 @@ import patterns.gof.behavioral.interpreter.InterpreterClient;
 import patterns.gof.behavioral.iterator.IteratorClient;
 import patterns.gof.behavioral.mediator.MediatorClient;
 import patterns.gof.behavioral.memento.MementoClient;
+import patterns.gof.behavioral.observer.ObserverClient;
 import patterns.gof.creational.abstractFactory.AbstractFactoryClient;
 import patterns.gof.creational.builder.BuilderClient;
 import patterns.gof.creational.factoryMethod.FactoryMethodClient;
@@ -24,8 +25,8 @@ import patterns.gof.structural.facade.FacadeClient;
 import patterns.gof.structural.flyweight.FlyweightClient;
 import patterns.gof.structural.proxy.ProxyClient;
 
-public class Main {
-	public static void main(String[] args) {
+public class GOFMain {
+	public void main() {
 		List<PatternList> gofPatterns = new ArrayList<PatternList>();
 		
 		fillPatterns(gofPatterns);
@@ -33,13 +34,13 @@ public class Main {
 		printPatterns(gofPatterns);
 	}
 	
-	private static void fillPatterns(List<PatternList> gofPatterns) {
+	private void fillPatterns(List<PatternList> gofPatterns) {
 		fillCreational(gofPatterns);
 		fillStructural(gofPatterns);
 		fillBehavioral(gofPatterns);
 	}
 	
-	private static void fillCreational(List<PatternList> gofPatterns) {
+	private void fillCreational(List<PatternList> gofPatterns) {
 		gofPatterns.add(new PatternList("CREATIONAL", new Client[] {
 				new AbstractFactoryClient(),
 				new BuilderClient(),
@@ -49,7 +50,7 @@ public class Main {
 		}));
 	}
 	
-	private static void fillStructural(List<PatternList> gofPatterns) {
+	private void fillStructural(List<PatternList> gofPatterns) {
 		gofPatterns.add(new PatternList("STRUCTURAL", new Client[] {
 				new AdapterClient(),
 				new BridgeClient(),
@@ -61,18 +62,19 @@ public class Main {
 		}));
 	}
 	
-	private static void fillBehavioral(List<PatternList> gofPatterns) {
+	private void fillBehavioral(List<PatternList> gofPatterns) {
 		gofPatterns.add(new PatternList("BEHAVIORAL", new Client[] {
 				new ChainOfResponsibilityClient(),
 				new CommandClient(),
 				new InterpreterClient(),
 				new IteratorClient(),
 				new MediatorClient(),
-				new MementoClient()
+				new MementoClient(),
+				new ObserverClient()
 		}));
 	}
 	
-	private static void printPatterns(List<PatternList> gofPatterns) {
+	private void printPatterns(List<PatternList> gofPatterns) {
 		for (PatternList patternList : gofPatterns) {
 			testingOutput(patternList.getListName());
 			for (Client client : patternList.getPatterns()) {
@@ -81,7 +83,7 @@ public class Main {
 		}
 	}
 	
-	private static void testingOutput(String testingCase) {
+	private void testingOutput(String testingCase) {
 		System.out.println("          /\\/\\/\\/\\/\\/\\/\\/\\/\\/\\");
 		System.out.println("               " + testingCase);
 		System.out.println("          \\/\\/\\/\\/\\/\\/\\/\\/\\/\\/");

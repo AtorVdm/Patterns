@@ -3,6 +3,7 @@ package patterns.gof.behavioral.chainOfResponsibility;
 import patterns.gof.helpers.Client;
 
 public class ChainOfResponsibilityClient extends Client {
+	@Override
 	public void main() {
 		cleanOutput();
 		

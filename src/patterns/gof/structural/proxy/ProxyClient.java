@@ -3,6 +3,7 @@ package patterns.gof.structural.proxy;
 import patterns.gof.helpers.Client;
 
 public class ProxyClient extends Client {
+	@Override
 	public void main() {
 		cleanOutput();
 		
