@@ -1,11 +1,15 @@
 package patterns.gof.structural.bridge;
 
 public abstract class Shape {
-	Color color;  
+	private Color color;  
 	
     Shape(Color color) {  
-        this.color=color;  
+        this.color = color;  
     }
     
     abstract public void colorIt();
+    
+    public Color getColor() {
+    	return color;
+    }
 }

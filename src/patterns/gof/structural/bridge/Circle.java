@@ -7,6 +7,6 @@ public class Circle extends Shape {
 
 	@Override
 	public void colorIt() {
-		BridgeClient.addOutput("circle filled with " + color.fillColor() + " color");
+		BridgeClient.addOutput("circle filled with " + getColor().fillColor() + " color");
 	}
 }

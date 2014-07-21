@@ -1,7 +1,7 @@
 package patterns.gof.helpers;
 
 public abstract class Client {
-	protected static String output;
+	private static String output;
 	
 	public abstract void main();
 	

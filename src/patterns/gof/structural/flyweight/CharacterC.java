@@ -2,8 +2,8 @@ package patterns.gof.structural.flyweight;
 
 public class CharacterC extends EnglishCharacter {
 	public CharacterC() {
-		simbol = 'C';
-		width = 40;
-		height = 50;
+		setSymbol('C');
+		setWidth(40);
+		setHeight(50);
 	}
 }

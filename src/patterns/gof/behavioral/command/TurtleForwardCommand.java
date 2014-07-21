@@ -7,12 +7,12 @@ public class TurtleForwardCommand extends Command {
 
 	@Override
 	public void execute() {
-		turtle.moveForward();
+		getTurtle().moveForward();
 		
 	}
 
 	@Override
 	public void undo() {
-		turtle.moveBackward();
+		getTurtle().moveBackward();
 	}
 }

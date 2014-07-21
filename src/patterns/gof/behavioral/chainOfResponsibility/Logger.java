@@ -1,8 +1,8 @@
 package patterns.gof.behavioral.chainOfResponsibility;
 
 public abstract class Logger {
-	protected int logMask;
-    protected Logger next;
+	private int logMask;
+	private Logger next;
 
     public Logger(int mask) {
         this.logMask = mask;

@@ -7,12 +7,12 @@ public class TurtleLeftCommand extends Command {
 
 	@Override
 	public void execute() {
-		turtle.moveLeft();
+		getTurtle().moveLeft();
 		
 	}
 
 	@Override
 	public void undo() {
-		turtle.moveRight();
+		getTurtle().moveRight();
 	}
 }

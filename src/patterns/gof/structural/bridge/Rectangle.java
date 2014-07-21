@@ -7,6 +7,6 @@ public class Rectangle extends Shape {
 
 	@Override
 	public void colorIt() {
-		BridgeClient.addOutput("rectangle filled with " + color.fillColor() + " color");
+		BridgeClient.addOutput("rectangle filled with " + getColor().fillColor() + " color");
 	}
 }

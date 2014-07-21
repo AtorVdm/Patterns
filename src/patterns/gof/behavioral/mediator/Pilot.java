@@ -1,7 +1,7 @@
 package patterns.gof.behavioral.mediator;
 
 public abstract class Pilot {
-	protected Mediator mediator;
+	private Mediator mediator;
 	
 	public Pilot(Mediator mediator) {
 		this.mediator = mediator;

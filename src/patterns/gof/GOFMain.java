@@ -10,6 +10,10 @@ import patterns.gof.behavioral.iterator.IteratorClient;
 import patterns.gof.behavioral.mediator.MediatorClient;
 import patterns.gof.behavioral.memento.MementoClient;
 import patterns.gof.behavioral.observer.ObserverClient;
+import patterns.gof.behavioral.state.StateClient;
+import patterns.gof.behavioral.strategy.StrategyClient;
+import patterns.gof.behavioral.templateMethod.TemplateMethodClient;
+import patterns.gof.behavioral.visitor.VisitorClient;
 import patterns.gof.creational.abstractFactory.AbstractFactoryClient;
 import patterns.gof.creational.builder.BuilderClient;
 import patterns.gof.creational.factoryMethod.FactoryMethodClient;
@@ -70,7 +74,11 @@ public class GOFMain {
 				new IteratorClient(),
 				new MediatorClient(),
 				new MementoClient(),
-				new ObserverClient()
+				new ObserverClient(),
+				new StateClient(),
+				new StrategyClient(),
+				new TemplateMethodClient(),
+				new VisitorClient()
 		}));
 	}
 	

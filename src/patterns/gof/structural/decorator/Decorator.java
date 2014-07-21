@@ -3,7 +3,7 @@ package patterns.gof.structural.decorator;
 import patterns.gof.helpers.Pattern;
 
 public abstract class Decorator implements Component, Pattern {
-	protected Component component;
+	private Component component;
 	
 	public Decorator(Component component) {
 		this.component = component;

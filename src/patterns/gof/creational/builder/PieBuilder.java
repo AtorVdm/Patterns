@@ -1,7 +1,7 @@
 package patterns.gof.creational.builder;
 
 public abstract class PieBuilder {
-	protected Pie pie;
+	private Pie pie;
 	
 	private boolean baked;
 	
